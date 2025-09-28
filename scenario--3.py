@@ -12,8 +12,8 @@ options.browser_version = "dev"  # or set a specific version
 options.platform_name = "Windows 10"
 
 lt_options = {
-    "username": "akashwill8055",       # Replace with your LambdaTest username
-    "accessKey": "LT_MMIYRK49tJxySbkrR0pp7Lrd0sjoQLaZR4ZwJkmaEdYNgJp",    # Replace with your LambdaTest access key
+    "username": "ak.........5",       # Replace with your LambdaTest username
+    "accessKey": "LT_MMIYRsdg..............p",    # Replace with your LambdaTest access key
     "project": "Untitled",
     "w3c": True,
     "plugin": "python-python"
