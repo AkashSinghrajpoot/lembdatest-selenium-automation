@@ -3,8 +3,8 @@ from selenium.webdriver.common.by import By
 import time
 
 # 🔑 Replace with your LambdaTest credentials
-LT_USERNAME = "akashwill8055"
-LT_ACCESS_KEY = "LT_MMIYRK49tJxySbkrR0pp7Lrd0sjoQLaZR4ZwJkmaEdYNgJp"
+LT_USERNAME = "aka......055"
+LT_ACCESS_KEY = "LT_..........MMI"
 
 # ---------------------------
 # Capabilities Setup
