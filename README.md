@@ -1,2 +1,89 @@
-# lembdatest-selenium-automation
-LambdaTest Selenium Playground Automation  This repository contains three Selenium automation scripts for LambdaTest’s Selenium Playground. All scripts run on LambdaTest’s cloud platform using your credentials.  Prerequisites  Python 3.10+  Selenium:  pip install selenium   LambdaTest account with username and access key.  LambdaTest Setup  Replace your credentials in each script:  lt_options = {     "username": "<YOUR_LAMBDATEST_USERNAME>",     "accessKey": "<YOUR_LAMBDATEST_ACCESS_KEY>",     "project": "Untitled",     "w3c": True,     "plugin": "python-python" }   Initialize remote WebDriver:  driver = webdriver.Remote(     command_executor="https://hub.lambdatest.com/wd/hub",     options=options )  Scenario 1: Drag & Drop Slider  Open Drag & Drop Demo.  Drag all items to drop zone.  Go to Drag & Drop Sliders page.  Move slider from 15 → 95.  Validate the slider value is 95.  Uses incremental drag to work with the page’s custom JS events.  Scenario 2: Input Form Demo  Open Input Form Demo.  Submit form without filling fields → check validation.  Fill in all required fields (name, email, password, company, city, state, zip, etc.).  Select Country from dropdown.  Submit form and validate success message.  Scenario 3: Simple Form Demo  Open Simple Form Demo.  Enter a message and validate it displays correctly.  Enter two numbers, click Get Total, and validate the sum.  Run the Scripts  Replace LambdaTest credentials.  Run each script:  python drag_and_drop_slider.py python input_form_demo.py python simple_form_demo.py   Check the terminal for validation messages.  Notes  Slider uses incremental drag to handle JS pointer events.  Small delays (time.sleep()) ensure UI updates correctly.  Works on Windows 10 / Chrome, but browser version can be changed.
+LambdaTest Selenium Playground Automation
+
+This repository contains three Selenium automation scripts for LambdaTest’s Selenium Playground. All scripts run on LambdaTest’s cloud platform using your credentials.
+
+Prerequisites
+
+Python 3.10+
+
+Selenium:
+
+pip install selenium
+
+
+LambdaTest account with username and access key.
+
+LambdaTest Setup
+
+Replace your credentials in each script:
+
+lt_options = {
+    "username": "<YOUR_LAMBDATEST_USERNAME>",
+    "accessKey": "<YOUR_LAMBDATEST_ACCESS_KEY>",
+    "project": "Untitled",
+    "w3c": True,
+    "plugin": "python-python"
+}
+
+
+Initialize remote WebDriver:
+
+driver = webdriver.Remote(
+    command_executor="https://hub.lambdatest.com/wd/hub",
+    options=options
+)
+
+Scenario 1: Drag & Drop Slider
+
+Open Drag & Drop Demo.
+
+Drag all items to drop zone.
+
+Go to Drag & Drop Sliders page.
+
+Move slider from 15 → 95.
+
+Validate the slider value is 95.
+
+Uses incremental drag to work with the page’s custom JS events.
+
+Scenario 2: Input Form Demo
+
+Open Input Form Demo.
+
+Submit form without filling fields → check validation.
+
+Fill in all required fields (name, email, password, company, city, state, zip, etc.).
+
+Select Country from dropdown.
+
+Submit form and validate success message.
+
+Scenario 3: Simple Form Demo
+
+Open Simple Form Demo.
+
+Enter a message and validate it displays correctly.
+
+Enter two numbers, click Get Total, and validate the sum.
+
+Run the Scripts
+
+Replace LambdaTest credentials.
+
+Run each script:
+
+python drag_and_drop_slider.py
+python input_form_demo.py
+python simple_form_demo.py
+
+
+Check the terminal for validation messages.
+
+Notes
+
+Slider uses incremental drag to handle JS pointer events.
+
+Small delays (time.sleep()) ensure UI updates correctly.
+
+Works on Windows 10 / Chrome, but browser version can be changed.
